@@ -7,7 +7,7 @@ function Header() {
     const [toggle, setToggle] = useState(false)
     return (
         <>
-            <div className='bg-stone-300 grid grid-cols-3 p-3'>
+            <div className='bg-neutral-400 grid grid-cols-3 p-3'>
                 {/* logo */}
                 <div className='flex items-center'>
                     <img width={'50px'} height={'50px'} src="https://png.pngtree.com/png-vector/20250712/ourmid/pngtree-colorful-books-stack-png-image_16627118.webp" alt="" />
@@ -22,11 +22,11 @@ function Header() {
                     <FaInstagram className='text-xl' />
                     <FaTwitter className='text-xl' />
                     <FaFacebookSquare className='text-xl' />
-                    <Link to={'/login'} className=' text-l flex justify-center items-center ms-4 gap-2 border border-2 rounded  px-3 py-2 hover:bg-neutral-400 border border-neutral-400' ><FaUser />Login</Link>
+                    <Link to={'/login'} className=' text-l flex justify-center items-center ms-4 gap-2 border border-2 border-neutral-600 rounded  px-3 py-2 hover:bg-neutral-600 hover:text-white' ><FaUser />Login</Link>
                 </div>
             </div>
             {/* nav */}
-            <nav className='bg-neutral-500 w-full text-white md:flex justify-center items-center p-3'>
+            <nav className='bg-neutral-600 w-full text-white md:flex justify-center items-center p-3'>
                 {/* menu  */}
                 <div className='flex justify-between items-center  md:hidden'>
                     <button onClick={() => setToggle(!toggle)}>{toggle ? <FaX className='text-xl' /> : <FaBars className='text-2xl' />}</button>

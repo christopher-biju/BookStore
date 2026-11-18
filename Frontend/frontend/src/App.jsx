@@ -27,7 +27,7 @@ function App() {
         <Route path='/Contact' element={<Contact />} />
         <Route path='/Books' element={<Books />} />
         <Route path='/login' element={<Auth />} />
-        <Route path='/register' element={<Auth />} />
+        <Route path='/register' element={<Auth insideRegister/>} />
 
 
         <Route path='/Profile/:id' element={<Profile />} />
@@ -36,8 +36,6 @@ function App() {
         <Route path='/admin' element={<AdminDashboard />} />
         <Route path='/admin/resources' element={<AdminResource />} />
         <Route path='/admin/settings' element={<AdminSettings />} />
-
-
       </Routes>
     </>
   )
