@@ -7,15 +7,15 @@ function Header() {
     const [toggle, setToggle] = useState(false)
     return (
         <>
-            <div className='bg-neutral-400 grid grid-cols-3 p-3'>
+            <div className='bg-neutral-500 grid grid-cols-3 p-3'>
                 {/* logo */}
                 <div className='flex items-center'>
                     <img width={'50px'} height={'50px'} src="https://png.pngtree.com/png-vector/20250712/ourmid/pngtree-colorful-books-stack-png-image_16627118.webp" alt="" />
-                    <h1 className='text-2xl ms-3 font-bold md:hidden'>BookStore</h1>
+                    <h1 className='text-white text-2xl ms-3 font-bold md:hidden'>BookStore</h1>
                 </div>
                 {/* title */}
                 <div className='md:flex justify-center items-center hidden'>
-                    <h1 className='text-4xl  ms-3 font-bold '>BookStore</h1>
+                    <h1 className='text-4xl text-white ms-3 font-bold '>BookStore</h1>
                 </div>
                 {/* login */}
                 <div className='md:flex justify-end items-center gap-5 hidden'>
@@ -33,9 +33,9 @@ function Header() {
                     <Link to={'/login'} className='flex justify-center items-center ms-4 gap-2 border border-2 rounded  px-3 py-2 hover:bg-stone-200 border border-neutral-400' ><FaUser />Login</Link>
                 </div>
                 <ul className={toggle ? 'flex flex-col gap-2' : 'md:flex gap-4 hidden'}>
-                    <li><Link to={'/'} className='md:mx-4'>HOME</Link></li>
-                    <li><Link to={'/Books'} className='md:mx-4'>BOOK'S</Link></li>
-                    <li><Link to={'/Contact'} className='md:mx-4'>CONTACT</Link></li>
+                    <li><Link to={'/'} className='md:mx-4 hover:text-yellow-400 transition-colors'>HOME</Link></li>
+                    <li><Link to={'/Books'} className='md:mx-4 hover:text-yellow-400 transition-colors'>BOOK'S</Link></li>
+                    <li><Link to={'/Contact'} className='md:mx-4 hover:text-yellow-400 transition-colors'>CONTACT</Link></li>
                 </ul>
             </nav>
         </>
