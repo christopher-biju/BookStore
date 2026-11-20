@@ -18,11 +18,11 @@ function Header() {
                     <h1 className='text-4xl text-white ms-3 font-bold '>BookStore</h1>
                 </div>
                 {/* login */}
-                <div className='md:flex justify-end items-center gap-5 hidden'>
+                <div className='md:flex justify-end items-center text-white gap-5 hidden'>
                     <FaInstagram className='text-xl' />
                     <FaTwitter className='text-xl' />
                     <FaFacebookSquare className='text-xl' />
-                    <Link to={'/login'} className=' text-l flex justify-center items-center ms-4 gap-2 border border-2 border-neutral-600 rounded  px-3 py-2 hover:bg-neutral-600 hover:text-white' ><FaUser />Login</Link>
+                    <Link to={'/login'} className=' text-l flex justify-center items-center ms-4 gap-2 border border-1 border-white rounded  px-3 py-2 hover:bg-neutral-600 hover:text-white' ><FaUser />Login</Link>
                 </div>
             </div>
             {/* nav */}
