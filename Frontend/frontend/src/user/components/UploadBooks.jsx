@@ -8,22 +8,22 @@ function UploadBooks() {
             <div className='md:grid grid-cols-2 w-full mt-10'>
                 {/* section*/}
                 <div className='px-5'>
-                    <div className='mb-5'>
+                    <div className='mb-6'>
                         <input type="text" placeholder='Book Title' className='w-full border-1 rounded bg-white text-black p-2' />
                     </div>
-                    <div className='mb-5'>
+                    <div className='mb-6'>
                         <input type="text" placeholder='Author' className='w-full border-1 rounded bg-white text-black p-2' />
                     </div>
-                    <div className='mb-5'>
+                    <div className='mb-6'>
                         <input type="text" placeholder='Book Cover Image Url' className='w-full border-1 rounded bg-white text-black p-2' />
                     </div>
-                    <div className='mb-5'>
+                    <div className='mb-6'>
                         <input type="text" placeholder='Total Pages' className='w-full border-1 rounded bg-white text-black p-2' />
                     </div>
-                    <div className='mb-5'>
+                    <div className='mb-6'>
                         <input type="text" placeholder='Orginal Price' className='w-full border-1 rounded bg-white text-black p-2' />
                     </div>
-                    <div className='mb-5'>
+                    <div className='mb-6'>
                         <input type="text" placeholder='Discount Price' className='w-full border-1 rounded bg-white text-black p-2' />
                     </div>
                     <div className='mb-5'>
@@ -64,8 +64,8 @@ function UploadBooks() {
             </div>
             {/* reset and add book  */}
             <div className='flex justify-center mt-10 px-5 md:justify-end'>
-                <button className='bg-red-600 px-3 py-2 rounded-md text-white hover:bg-red-700'>Reset</button>
-                <button className='bg-green-600 px-3 py-2 text-white rounded-md ms-5 hover:bg-green-700'>Add Book Details</button>
+                <button className='bg-red-600 px-3 py-2 rounded-md text-white text-lg hover:bg-red-700'>Reset</button>
+                <button className='bg-green-600 px-2 py-2 text-white rounded-md ms-5 text-lg hover:bg-green-700'>Add Book Details</button>
             </div>
         </div>
     )

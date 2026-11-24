@@ -11,7 +11,7 @@ import AdminDashboard from './admin/pages/AdminDashboard'
 import AdminSettings from './admin/pages/AdminSettings'
 import AdminResource from './admin/pages/AdminResource'
 import Preloader from './components/Preloader'
-
+import PageNotFound from './pages/PageNotFound'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,14 +28,12 @@ function App() {
         <Route path='/Books' element={<Books />} />
         <Route path='/login' element={<Auth />} />
         <Route path='/register' element={<Auth insideRegister/>} />
-
-
         <Route path='/Profile/:id' element={<Profile />} />
         <Route path='/books/:id' element={<View />} />
-
         <Route path='/admin' element={<AdminDashboard />} />
         <Route path='/admin/resources' element={<AdminResource />} />
         <Route path='/admin/settings' element={<AdminSettings />} />
+        <Route path='/*' element={<PageNotFound />} />
       </Routes>
     </>
   )

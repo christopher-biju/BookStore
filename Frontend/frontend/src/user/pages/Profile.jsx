@@ -3,7 +3,9 @@ import Header from '../components/Header'
 import Footer from '../../components/Footer'
 import Edit from '../components/Edit';
 import UploadBooks from '../components/UploadBooks';
+import UploadStatus from '../components/UploadStatus';
 import { FaCircleCheck } from 'react-icons/fa6';
+import PurchaseHistory from '../components/PurchaseHistory';
 
 function Profile() {
   const [currentTab, setCurrentTab] = useState(1)
@@ -24,13 +26,13 @@ function Profile() {
       <p className='text-xl font-bold px-20 mt-5'>Bio</p>
       <p className='text-justify md:px-20 px-5 my-5'>This is your personal space where you can manage your account, explore your reading activity, and track your history. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur aliquid, sapiente quidem tenetur ducimus est a eaque possimus soluta officia dolores dolore porro illum repudiandae. Ab minima mollitia optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat eaque neque labore deserunt, alias itaque ullam, aliquam, repellat corporis iste iusto consectetur molestias atque recusandae. Hic animi iure magnam.</p>
       <div className='flex justify-center items-center gap-3 my-8 font-bold text-lg'>
-        <p onClick={() => setCurrentTab(1)} className={currentTab === 1 ? 'p-4 border-gray-200 border-2 border-t border-r rounded cursor-pointer' : 'p-4 cursor-pointer border-b'}>Upload books</p>
-        <p onClick={() => setCurrentTab(2)} className={currentTab === 2 ? 'p-4 border-gray-200 border-2 border-t border-r rounded cursor-pointer' : 'p-4 cursor-pointer border-b'}>Upload book status</p>
-        <p onClick={() => setCurrentTab(3)} className={currentTab === 3 ? 'p-4 border-gray-200 border-2 border-t border-r rounded cursor-pointer' : 'p-4 cursor-pointer border-b'}>Purchase history</p>
+        <p onClick={() => setCurrentTab(1)} className={currentTab === 1 ? 'p-4 border-gray-200 border-3 border-t border-r rounded cursor-pointer' : 'p-4 cursor-pointer border-b'}>Upload books</p>
+        <p onClick={() => setCurrentTab(2)} className={currentTab === 2 ? 'p-4 border-gray-200 border-3 border-t border-r rounded cursor-pointer' : 'p-4 cursor-pointer border-b'}>Upload book status</p>
+        <p onClick={() => setCurrentTab(3)} className={currentTab === 3 ? 'p-4 border-gray-200 border-3 border-t border-r rounded cursor-pointer' : 'p-4 cursor-pointer border-b'}>Purchase history</p>
       </div>
       {currentTab === 1 && <div><UploadBooks /></div>}
-      {currentTab === 2 && <div>Upload book status</div>}
-      {currentTab === 3 && <div>Purchase history</div>}
+      {currentTab === 2 && <div><UploadStatus /></div>}
+      {currentTab === 3 && <div><PurchaseHistory/></div>}
       <Footer />
     </>
   )
