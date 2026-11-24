@@ -7,7 +7,7 @@ function Edit() {
     return (
         <div>
             {/* Button */}
-            <button onClick={() => setOffCanvas(!OffCanvas)} className='bg-mist-500 text-white font-bold p-2 flex items-center justify-center rounded hover:bg-white hover:text-black border'>
+            <button onClick={() => setOffCanvas(!OffCanvas)} className='bg-mist-600 text-white font-bold p-2 flex items-center justify-center rounded hover:bg-white hover:text-black border-2'>
                 <FaPen className='me-2' /> EDIT
             </button>
             {/* Offcanvas */}

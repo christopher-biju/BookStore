@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaPlus } from 'react-icons/fa'
 
 function UploadBooks() {
     return (
@@ -47,10 +48,24 @@ function UploadBooks() {
                     <div className='my-10 flex justify-center items-center'>
                         <label htmlFor="bookImages">
                             <input type="file" id='bookImages' hidden />
-                            <img className='hover:cursor-pointer' style={{ width: '', height: '', borderRadius: '50%' }} width={'110px'} height={'110px'} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKPodXnR6tvE2pTB-ZZMgaD92iwzC9Hq9X7pvFI4v7w&s=10" alt="uploadBook" />
+                            <img className=' hover:cursor-pointer' style={{ width: '', height: '', borderRadius: '50%' }} width={'130px'} height={'130px'} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKPodXnR6tvE2pTB-ZZMgaD92iwzC9Hq9X7pvFI4v7w&s=10" alt="uploadBook" />
                         </label>
                     </div>
+                    {/* preview and add */}
+                    <div className='flex justify-center items-center mb-5'>
+                        <img width={'70px'} height={'70px'} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD7KIA91kjhS5h3N-Kz9zcw6nYgqYJ2-TiEahahwsQlw&s=10" alt="" />
+                        <label htmlFor="bookupload">
+                            <input type="file" id='bookupload' hidden />
+                            <FaPlus className='ms-3 text-2xl' />
+                        </label>
+
+                    </div>
                 </div>
+            </div>
+            {/* reset and add book  */}
+            <div className='flex justify-center mt-10 px-5 md:justify-end'>
+                <button className='bg-red-600 px-3 py-2 rounded-md text-white hover:bg-red-700'>Reset</button>
+                <button className='bg-green-600 px-3 py-2 text-white rounded-md ms-5 hover:bg-green-700'>Add Book Details</button>
             </div>
         </div>
     )
