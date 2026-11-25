@@ -20,6 +20,7 @@ function Edit() {
                             <h1>Update User Profile</h1>
                             <FaX className='hover:text-red-300' onClick={() => setOffCanvas(!OffCanvas)} />
                         </div>
+                        {/* body */}
                         <div className='flex justify-center items-center flex-col my-5'>
                             <label htmlFor="userProfile">
                                 <input type="file" id='userProfile' hidden />
